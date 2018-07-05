@@ -1,0 +1,14 @@
+.profilePic{
+    width: 200px;
+    height: 200px;
+    margin-left:  auto;
+    margin-right:  auto;
+    display: block;
+    
+}
+.card {
+    padding: 25px;
+}
+.card-content.white-text.center-align {
+    padding: 10px;
+}
