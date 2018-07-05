@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import { Row, Input, Button } from 'react-materialize'
+import { Button } from 'react-materialize'
 import axios from 'axios';
 import Dropzone from 'react-dropzone';
 import { USER } from "../../utils";
@@ -25,7 +25,7 @@ class profilePic extends Component {
     };
 
     submit = async () => {
-        const {name, file} = this.state;
+        const { file} = this.state;
 
         const formData = new FormData();
         formData.append('file', file);
@@ -34,14 +34,14 @@ class profilePic extends Component {
         const response = await axios.post(
             'https://api.cloudinary.com/v1_1/phamjosi/image/upload', formData,
         );
-        {
+        
             USER.updateUser( this.state.userId,{
                 profilePic:response.data.public_id
 
             })
                 .then(res => console.log(res))
                 .catch(err => console.log(err));
-        }
+        
         this.forceUpdate()
         console.log(response.data.public_id)
     }

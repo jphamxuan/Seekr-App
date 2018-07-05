@@ -3,8 +3,8 @@ import "./MapContainer.css";
 import { Map, InfoWindow, Marker, GoogleApiWrapper } from 'google-maps-react';
 import { Row, Col, Input, Button, Card, CardTitle } from 'react-materialize'
 import { API, USER } from "../../utils";
-import SaveButton from "../SaveButton"
-import DeleteButton from "../DeleteButton"
+// import SaveButton from "../SaveButton"
+// import DeleteButton from "../DeleteButton"
 
 
 
@@ -40,7 +40,7 @@ export class MapContainer extends Component {
         let lng
         navigator.geolocation.getCurrentPosition((position) => {
 
-                lat= position.coords.latitude,
+                lat= position.coords.latitude
                 lng= position.coords.longitude
             
             return this.setState({ lat: lat, lng: lng })
@@ -184,7 +184,7 @@ export class MapContainer extends Component {
                                 title={this.state.selectedPlace.name}
                                 reveal={<p>{this.state.selectedPlace.summary}</p>}>
                                 
-                                <p><a href="#">This is a link</a></p>
+                                <p><a>This is a link</a></p>
                                 <p>This trail is saved</p>
                             </Card>
                         </InfoWindow>

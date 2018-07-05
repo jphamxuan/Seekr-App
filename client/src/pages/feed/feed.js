@@ -5,11 +5,11 @@ import Navbar from "../../components/navbar"
 
 class Feed extends Component {
     render(){
-        const feedCSS = {
-            background: {
-                backgroundColor: "#997733"
-            }
-        }
+        // const feedCSS = {
+        //     background: {
+        //         backgroundColor: "#997733"
+        //     }
+        // }
         return(
            <Fragment>
                <Helmet>

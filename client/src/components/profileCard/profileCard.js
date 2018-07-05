@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from "react";
-import logo from '../../images/fish.jpg';
 import "./profileCard.css";
 import {USER} from "../../utils";
 import {Image} from 'cloudinary-react';
@@ -25,12 +24,12 @@ class profileCard extends Component {
   
 
     render() {
-        const profileCardCSS = {
-            background: {
-                backgroundColor: "#117755",
-                borderRadius: "5px"
-            }
-        }
+        // const profileCardCSS = {
+        //     background: {
+        //         backgroundColor: "#117755",
+        //         borderRadius: "5px"
+        //     }
+        // }
         return (
         <Fragment>
             <div className="row">

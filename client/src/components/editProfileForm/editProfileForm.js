@@ -34,7 +34,7 @@ class editProfileForm extends Component {
     };
     handleFormSubmit = event => {
         event.preventDefault();
-         {
+         
             USER.updateUser( this.state.userId,{
                 firstname: this.state.firstname,
                 lastname: this.state.lastname,
@@ -46,7 +46,7 @@ class editProfileForm extends Component {
             })
                 .then(res => console.log(res))
                 .catch(err => console.log(err));
-        }
+        
         console.log(sessionStorage)
 
     };
@@ -69,7 +69,7 @@ class editProfileForm extends Component {
                     />
                     <Input s={6} label="Last Name" 
                         value={this.state.lastname}
-                        label={this.state.userAc.lastname}
+                        // label={this.state.userAc.lastname}
                         onChange={this.handleInputChange}
                         name="lastname"
                     />

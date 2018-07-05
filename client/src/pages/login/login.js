@@ -1,10 +1,10 @@
 import React, { Component, Fragment } from "react"
 import { USER } from "../../utils";
 import { Link } from "react-router-dom";
-import { Row, Col, Input, Button } from 'react-materialize'
+import { Row, Col, Input } from 'react-materialize'
 import LoginButton from "../../components/LoginButton"
 import LogoutButton from "../../components/LogoutButton"
-import MapContainer from "../../components/MapContainer";
+// import MapContainer from "../../components/MapContainer";
 
 class Login extends Component {
     
