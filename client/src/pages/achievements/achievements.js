@@ -1,4 +1,4 @@
-import {Tabs, Tab, Dropdown, Button, NavItem} from "react-materialize"
+import { Dropdown, Button, NavItem} from "react-materialize"
 
 import React, {Component} from "react"
 import bear from '../../images/achievements/Bear.png'
@@ -7,20 +7,20 @@ import bearpaw from '../../images/achievements/BearPaw.png'
 import bike from '../../images/achievements/Bike.png'
 import binoculars from '../../images/achievements/Binoculars.png'
 import compass from '../../images/achievements/compass.png'
-import fire from '../../images/achievements/Fire.png'
-import firstaid from '../../images/achievements/FirstAid.png'
-import flashlight from '../../images/achievements/Flashlight.png'
-import helmetbackpack from '../../images/achievements/Helmet_Backpack.png'
-import helmet from '../../images/achievements/Helmet.png'
-import hikingboot from '../../images/achievements/HikingBoot.png'
-import hotdogstick from '../../images/achievements/Hotdog_Stick.png'
-import kayak from '../../images/achievements/Kayak.png'
-import map from '../../images/achievements/Map.png'
-import plateandfork from '../../images/achievements/PlateandFork.png'
-import rope from '../../images/achievements/Rope.png'
-import swissarmyknife from '../../images/achievements/SwissArmyKnife.png'
-import thermocoffee from '../../images/achievements/ThermoCoffee.png'
-import watch from '../../images/achievements/Watch.png'
+// import fire from '../../images/achievements/Fire.png'
+// import firstaid from '../../images/achievements/FirstAid.png'
+// import flashlight from '../../images/achievements/Flashlight.png'
+// import helmetbackpack from '../../images/achievements/Helmet_Backpack.png'
+// import helmet from '../../images/achievements/Helmet.png'
+// import hikingboot from '../../images/achievements/HikingBoot.png'
+// import hotdogstick from '../../images/achievements/Hotdog_Stick.png'
+// import kayak from '../../images/achievements/Kayak.png'
+// import map from '../../images/achievements/Map.png'
+// import plateandfork from '../../images/achievements/PlateandFork.png'
+// import rope from '../../images/achievements/Rope.png'
+// import swissarmyknife from '../../images/achievements/SwissArmyKnife.png'
+// import thermocoffee from '../../images/achievements/ThermoCoffee.png'
+// import watch from '../../images/achievements/Watch.png'
 import "./achievements.css"
 class Achievements extends Component{
     //psuedo code//
@@ -103,7 +103,7 @@ class Achievements extends Component{
         return <div> 
             <div style={{padding:"20px", height: "300px"}}>
             <div style ={{margin: "0 auto", textAlign:"center", borderRadius:"100%", height:"300px", width:"300px", backgroundColor:"blue"}}>
-                <img src={{}}/>
+                {/* <img src={{}}/> */}
             </div>   
             </div>
             <div style={{marginBottom: "50px", marginTop: "50px", textAlign: "center", }}>
@@ -124,7 +124,7 @@ class Achievements extends Component{
                                 justifySelf: "center"}}>
                                 <div style={{width: "300px", boxShadow: "5px 5px 25px 0px rgba(46,61,73,0.2)", borderRadius: "0.375rem", textAlign: "center", padding: "15px"}}>
                                 <div style={{width: "95px", height: "95px", backgroundColor: badge.color, margin:"0 auto", borderRadius:"100%"}}>
-                                    <img  className="size" src={badge.img}/>
+                                    {/* <img  className="size" src={badge.img}/> */}
                                 </div>
                                 <p>{badge.name}</p>
                                 <p>{badge.points}</p>
@@ -138,7 +138,7 @@ class Achievements extends Component{
                                 justifySelf: "center"}}>
                                 <div style={{width: "300px", boxShadow: "5px 5px 25px 0px rgba(46,61,73,0.2)", borderRadius: "0.375rem", textAlign: "center", padding: "15px"}}>
                                 <div style={{width: "95px", height: "95px", backgroundColor: badge.color, margin:"0 auto", borderRadius:"100%"}}>
-                                    <img  className="size" src={badge.img}/>
+                                    {/* <img  className="size" src={badge.img}/> */}
                                 </div>
                                 <p>{badge.name}</p>
                                 <p>{badge.points}</p>

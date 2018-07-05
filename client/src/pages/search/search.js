@@ -12,12 +12,12 @@ class TrailSearch extends Component {
 
     render() {
 
-        const searchCSS = {
-            searchBar: {
-                backgroundColor: "white",
-                borderRadius: "10px"
-            }
-        }
+        // const searchCSS = {
+        //     searchBar: {
+        //         backgroundColor: "white",
+        //         borderRadius: "10px"
+        //     }
+        // }
         return (
             <Fragment>
                 <Helmet>
